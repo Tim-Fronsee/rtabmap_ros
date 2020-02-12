@@ -1817,7 +1817,7 @@ void CoreWrapper::process(
 		if(!imus_.empty())
 		{
 			double stampDiff = 0.0;
-			Transform t = Transform::getClosestTransform(imus_, data.stamp(), &stampDiff);
+			Transform t = Transform::getTransform(imus_, data.stamp());
 			if(!t.isNull() && stampDiff == 0.0)
 			{
 				Eigen::Quaterniond q = t.getQuaterniond();
