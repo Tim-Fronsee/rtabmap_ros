@@ -1096,7 +1096,7 @@ void MapsManager::publishMaps(
 			}
 		}
 
-		ROS_INFO("Assembled %d obstacle and %d ground clouds (%d points, %fs)",
+		ROS_DEBUG("Assembled %d obstacle and %d ground clouds (%d points, %fs)",
 				countObstacles, countGrounds, (int)(assembledGround_->size() + assembledObstacles_->size()), time.ticks());
 
 		if( countGrounds > 0 ||

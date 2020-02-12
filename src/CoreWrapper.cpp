@@ -2067,7 +2067,7 @@ void CoreWrapper::process(
 		{
 			timeRtabmap = timer.ticks();
 		}
-		NODELET_INFO("rtabmap (%d): Rate=%.2fs, Limit=%.3fs, RTAB-Map=%.4fs, Maps update=%.4fs pub=%.4fs (local map=%d, WM=%d)",
+		NODELET_DEBUG("rtabmap (%d): Rate=%.2fs, Limit=%.3fs, RTAB-Map=%.4fs, Maps update=%.4fs pub=%.4fs (local map=%d, WM=%d)",
 				rtabmap_.getLastLocationId(),
 				rate_>0?1.0f/rate_:0,
 				rtabmap_.getTimeThreshold()/1000.0f,
